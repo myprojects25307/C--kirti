@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C# Practical File</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">C#</span>
+      <div>
+        <strong>C# Practical File</strong>
+        <small>BCA Semester V</small>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+
+    <aside class="sidebar">
+      <h3>Programs</h3>
+
+      <label class="search-wrap">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search programs..."
+          autocomplete="off"
+        >
+      </label>
+
+      <div id="categoryList" class="category-list"></div>
+    </aside>
+
+    <section class="content">
+
+      <div class="hero">
+        <h1>C# Practical Programs</h1>
+        <p>Name: Kirti Sharma</p>
+        <p>Class: BCA Semester V</p>
+        <p>Roll No.: 7084/24</p>
+      </div>
+
+      <div class="section-title">
+        <h2 id="listHeading">All Programs</h2>
+        <span id="resultLabel">40 programs</span>
+      </div>
+
+      <div id="programGrid" class="program-grid"></div>
+
+      <div id="emptyState" class="empty-state hidden">
+        No programs found.
+      </div>
+
+      <section id="detailPanel" class="detail-panel hidden">
+
+        <div class="detail-top">
+          <div>
+            <span id="detailNumber" class="program-number">Program 01</span>
+            <h2 id="detailTitle">Program Title</h2>
+            <p><strong>Aim:</strong></p>
+            <p id="detailAim" class="detail-aim"></p>
+          </div>
+
+          <button id="closeDetail" class="secondary-button">
+            Close
+          </button>
+        </div>
+
+        <h3>Source Code</h3>
+
+        <div class="code-panel">
+          <pre><code id="codeText"></code></pre>
+        </div>
+
+        <button id="copyCode" class="secondary-button">
+          Copy Code
+        </button>
+
+        <h3>Sample Output</h3>
+
+        <div class="output-panel">
+          <pre id="outputText"></pre>
+        </div>
+
+        <div class="explanation">
+          <strong>Explanation</strong>
+          <p id="detailExplanation"></p>
+        </div>
+
+        <div class="detail-actions">
+          <button id="prevProgram" class="secondary-button">
+            Previous
+          </button>
+
+          <button id="nextProgram" class="primary-button">
+            Next
+          </button>
+        </div>
+
+      </section>
+
+      <footer>
+        C# Practical File | BCA Semester V
+      </footer>
+
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="programs.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
